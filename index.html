@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İmanPowerTeşkilatı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>İmanPowerTeşkilatı</h1>
+        <button id="adminBtn">Admin Girişi</button>
+    </header>
+
+    <div id="login-container">
+        <h2>Teşkilat Girişi</h2>
+        <input type="email" id="email" placeholder="Gmail Adresiniz">
+        <input type="password" id="password" placeholder="Şifreniz">
+        <button id="loginBtn">Giriş Yap</button>
+    </div>
+
+    <div id="main-content" style="display:none;">
+        <div class="announcements">
+            <h3>Duyurular</h3>
+            <p id="latest-announcement">Yeni duyuru bekleniyor...</p>
+        </div>
+        
+        <div class="chat-box">
+            <div id="messages"></div>
+            <div class="input-area">
+                <input type="text" id="messageInput" placeholder="Mesaj yazın...">
+                <button id="sendBtn">Gönder</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
